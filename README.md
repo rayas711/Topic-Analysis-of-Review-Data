@@ -1,8 +1,12 @@
 # Topic-Analysis-of-Review-Data
+
 DESCRIPTION
+
 Help a leading mobile brand understand the voice of the customer by analyzing the reviews of their product on Amazon and the topics that customers are talking about. 
 You will perform topic modeling on specific parts of speech. You’ll finally interpret the emerging topics.  
+
 Problem Statement: 
+
 A popular mobile phone brand, Lenovo has launched their budget smartphone in the Indian market. The client wants to understand the VOC (voice of the customer) on the product. This will be useful to not just evaluate the current product, but to also get some direction for developing the product pipeline. The client is particularly interested in the different aspects that customers care about. Product reviews by customers on a leading e-commerce site should provide a good view.
 
 Domain: Amazon reviews for a leading phone brand
@@ -27,43 +31,44 @@ Perform specific cleanup, POS tagging, and restricting to relevant POS tags, the
 
 Tasks: 
 
-Read the .csv file using Pandas. Take a look at the top few records.
+1. Read the .csv file using Pandas. Take a look at the top few records.
 
-Normalize casings for the review text and extract the text into a list for easier manipulation.
+2. Normalize casings for the review text and extract the text into a list for easier manipulation.
 
-Tokenize the reviews using NLTKs word_tokenize function.
-Perform parts-of-speech tagging on each sentence using the NLTK POS tagger.
+3. Tokenize the reviews using NLTKs word_tokenize function.
 
-For the topic model, we should  want to include only nouns.
+4. Perform parts-of-speech tagging on each sentence using the NLTK POS tagger.
 
-Find out all the POS tags that correspond to nouns.
+5. For the topic model, we should  want to include only nouns.
 
-Limit the data to only terms with these tags.
+         1. Find out all the POS tags that correspond to nouns.
 
-Lemmatize. 
+         2. Limit the data to only terms with these tags.
 
-Different forms of the terms need to be treated as one.
+6. Lemmatize. 
 
-No need to provide POS tag to lemmatizer for now.
+         1. Different forms of the terms need to be treated as one.
 
-Remove stopwords and punctuation (if there are any). 
+         2. No need to provide POS tag to lemmatizer for now.
 
-Create a topic model using LDA on the cleaned-up data with 12 topics.
+7. Remove stopwords and punctuation (if there are any). 
 
-Print out the top terms for each topic.
+8. Create a topic model using LDA on the cleaned-up data with 12 topics.
 
-What is the coherence of the model with the c_v metric?
+         1. Print out the top terms for each topic.
 
-Analyze the topics through the business lens.
+         2. What is the coherence of the model with the c_v metric?
 
-Determine which of the topics can be combined.
+9. Analyze the topics through the business lens.
 
-Create a topic model using LDA with what you think is the optimal number of topics
+         1. Determine which of the topics can be combined.
 
-What is the coherence of the model?
+10. Create a topic model using LDA with what you think is the optimal number of topics
 
-The business should be able to interpret the topics.
+         1. What is the coherence of the model?
 
-Name each of the identified topics.
+11. The business should be able to interpret the topics.
 
-Create a table with the topic name and the top 10 terms in each to present to the business.
+         1. Name each of the identified topics.
+
+         2. Create a table with the topic name and the top 10 terms in each to present to the business.
